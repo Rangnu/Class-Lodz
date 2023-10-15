@@ -1,1 +1,44 @@
+#include <iostream>
+//Exercise_5
+//Write a program that solves the linear equation of the form ax+b=0 with integer coefficients given by the user.
 
+using namespace std;
+
+int main()
+{
+    int a,b;
+
+
+    //Prompt for input
+    //(a*x)+b=0
+    cout << "Enter the Coefficient 'a' : ";
+    cin>>a;
+
+    cout << "Enter the Constant 'b' : ";
+    cin>>b;
+
+
+   // Check if 'a' is zero
+   if( a == 0 ) {
+        if ( b==0) {
+            cout<<"Infinite solutions (0x = 0)"<<endl;
+            }
+            else
+            cout << "No solution (0x = " << b << ")" <<endl;
+            //0*x+b=0
+   }else {
+
+        //a*x+b=0, ax=-b, x=-(b/a)
+        double x;
+        x = -static_cast<double>(b) / a;
+        cout << "Solution: x = " << x << endl;
+
+
+   }
+
+
+
+
+
+    return 0;
+}
