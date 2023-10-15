@@ -1,0 +1,33 @@
+#include <iostream>
+//Exercise_4
+using namespace std;
+
+int main()
+{
+
+    int Cost_Price, Selling_Price;
+    double Difference;
+
+    cout << "Enter cost price of item :";
+    cin>>Cost_Price;
+    cout << "Enter selling price of item :";
+    cin>>Selling_Price;
+    Difference=Selling_Price-Cost_Price;
+
+    if (Cost_Price == Selling_Price) {
+        cout << "No Profit No Loss"<<endl;
+    }
+    else {
+            if(Cost_Price < Selling_Price) {
+                cout << "Profit :"<<Difference<<endl;
+            }
+            else {
+                    cout << "Loss :"<<Difference<<endl;
+                }
+            }
+
+
+
+
+    return 0;
+}
